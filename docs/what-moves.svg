@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-label="The agent's work moves to the cloud, the app stays on your laptop" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <rect width="760" height="320" rx="12" fill="#ffffff"/>
+  <text x="24" y="34" font-size="15" font-weight="600" fill="#1f2328">The agent's work moves to the cloud, the app stays on your laptop</text>
+
+  <rect x="24" y="60" width="320" height="236" rx="8" fill="none" stroke="#6e7781" stroke-width="1.25"/>
+  <text x="40" y="84" font-weight="600" fill="#1f2328">Your laptop</text>
+
+  <rect x="40" y="100" width="288" height="72" rx="8" fill="none" stroke="#6e7781" stroke-width="1.25"/>
+  <text x="56" y="124" font-weight="600" fill="#1f2328">Catalog app</text>
+  <text x="56" y="142" font-size="11.5" fill="#57606a">Stays here: Compose, Postgres, tests</text>
+  <text x="56" y="158" font-size="11.5" fill="#57606a">Where you review and test results</text>
+
+  <rect x="40" y="192" width="288" height="88" rx="8" fill="none" stroke="#6e7781" stroke-width="1.25"/>
+  <text x="56" y="216" font-weight="600" fill="#1f2328">Local sandbox</text>
+  <text x="56" y="234" font-size="11.5" fill="#57606a">catalog_job.py + SurrealDB kit</text>
+  <text x="56" y="250" font-size="11.5" fill="#57606a">Database and progress files</text>
+  <text x="56" y="266" font-size="11.5" fill="#57606a">Running job (does not move)</text>
+
+  <rect x="416" y="60" width="320" height="236" rx="8" fill="none" stroke="#6e7781" stroke-width="1.25"/>
+  <text x="432" y="84" font-weight="600" fill="#1f2328">Docker cloud</text>
+  <text x="432" y="102" font-size="11.5" fill="#57606a">Billed per second, TTL up to 24h</text>
+
+  <rect x="432" y="192" width="288" height="88" rx="8" fill="#0969da" fill-opacity="0.12" stroke="#0969da" stroke-width="2"/>
+  <text x="448" y="216" font-weight="600" fill="#1f2328">Cloud sandbox</text>
+  <text x="448" y="234" font-size="11.5" fill="#1f2328">Same files, kit tools and data</text>
+  <text x="448" y="250" font-size="11.5" fill="#1f2328">Job resumes from the last product</text>
+  <text x="448" y="266" font-size="11.5" fill="#1f2328">Keeps going with the lid closed</text>
+
+  <g fill="none" stroke="#6e7781" stroke-width="1.25">
+    <path d="M328 236H430" marker-end="url(#arrow)"/>
+    <path d="M576 192V136H330" marker-end="url(#arrow)"/>
+  </g>
+  <text x="380" y="226" text-anchor="middle" font-size="11.5" fill="#57606a">sbx move</text>
+  <text x="470" y="128" text-anchor="middle" font-size="11.5" fill="#57606a">results via sbx --cloud cp</text>
+</svg>
