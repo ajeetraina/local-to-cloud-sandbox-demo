@@ -122,13 +122,33 @@ One command captures the sandbox filesystem and recreates it in Docker's cloud. 
     sbx move catalog-lab --to cloud --name catalog-lab --ttl 45m --on-timeout hibernate --force
     ```
 
-2. Find the cloud sandbox's identifier. The move keeps the `--name` you gave it, unless that name is already taken in the cloud, in which case it adds a short unique suffix. Either the `SANDBOX` name or the `ID` works in later commands:
+    Result:
+   
+```
+warning: Secrets managed by sbx are not copied. The destination may use its own secrets; you may need to sign in again.
+warning: Credentials saved in copied files can still travel with the sandbox.
+warning: Local network policies are not copied. The destination uses cloud network policies.
+Warning: source limits are missing for CPU and memory; using cloud defaults for those limits. The source's actual allocation may be larger.
+Using cloud shape small (2 vCPU / 4096 MiB).
+Pushing sandbox catalog-lab to cloud ...
+Upload complete.
+✓ move sandbox catalog-lab to cloud (1m6s)
+✓ Moved to cloud sandbox catalog-lab (sbx_001m4mew9fgwh94zbwne62gmvz5)
+  Attach with:  sbx --cloud run sbx_001m4mew9fgwh94zbwne62gmvz5
+  Created cloud template tmpl_001m4metx2983pee0195k6vjncn to back it; remove it with `sbx --cloud template rm tmpl_001m4metx2983pee0195k6vjncn` once the sandbox is deleted.
+  Expires in 44m; the sandbox will then be stopped (it can be started again later).
+  try: sbx --cloud ttl sbx_001m4mew9fgwh94zbwne62gmvz5
+```
+
+
+
+3. Find the cloud sandbox's identifier. The move keeps the `--name` you gave it, unless that name is already taken in the cloud, in which case it adds a short unique suffix. Either the `SANDBOX` name or the `ID` works in later commands:
 
     ```
     sbx --cloud ls
     ```
 
-3. Save it for the rest of the lab (use the name or ID from the `ls` output):
+4. Save it for the rest of the lab (use the name or ID from the `ls` output):
 
     ```
     CLOUD=catalog-lab
