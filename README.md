@@ -160,6 +160,17 @@ One command captures the sandbox filesystem and recreates it in Docker's cloud. 
 
 <img width="1492" height="441" alt="image" src="https://github.com/user-attachments/assets/bc7ab0c4-dbfb-423a-8b07-130450d254a6" />
 
+The most useful action right now is resuming the operation over the Cloud using Docker Agentic Platform:
+
+  ```
+  python3 /home/agent/catalog_job.py status      # proves the data moved
+  python3 /home/agent/catalog_job.py run         # resume in the cloud
+  ```
+
+
+<img width="1273" height="532" alt="image" src="https://github.com/user-attachments/assets/0dbe5284-8d22-458e-b750-5491e4697baa" />
+
+
 
 4. Save it for the rest of the lab (use the name or ID from the `ls` output):
 
