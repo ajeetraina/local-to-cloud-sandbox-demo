@@ -155,6 +155,12 @@ One command captures the sandbox filesystem and recreates it in Docker's cloud. 
    shell/catalog-lab   shell   sbx_001m4mew9fgwh94zbwne62gmvz5   running           -
    ```
 
+
+## Accesing Agentic Platform
+
+<img width="1492" height="441" alt="image" src="https://github.com/user-attachments/assets/bc7ab0c4-dbfb-423a-8b07-130450d254a6" />
+
+
 4. Save it for the rest of the lab (use the name or ID from the `ls` output):
 
     ```
